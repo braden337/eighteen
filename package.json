@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "npm run build && surge dist -d https://eighteen.surge.sh",
-    "build": "parcel build src/index.html",
+    "build": "rm -rf dist && parcel build src/index.html --no-source-maps",
     "start": "parcel src/index.html"
   },
   "devDependencies": {
