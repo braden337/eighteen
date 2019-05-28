@@ -1,0 +1,14 @@
+{
+  "name": "eighteen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run build && surge dist -d https://eighteen.surge.sh",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "surge": "^0.20.5"
+  }
+}
